@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'establishRoomNo703OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.footerInnerWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 800%;
+}
+
+.footerInner {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding: 40px;
+}
+
+.footerInnerSecond {
+    margin-top: -100px;
+}
