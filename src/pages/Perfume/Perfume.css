@@ -1,18 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*
-{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-body
-{
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulMyungjo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     background: white;
 }
-.container{
+
+.container {
     position: relative;
     width: 1000px;
     justify-content: center;
@@ -20,42 +42,49 @@ body
     flex-wrap: wrap;
     padding: 100px;
 }
-.container .card{
+.container h1{
+    font-family: 'KCCChassam';
+}
+
+.container .card {
     position: relative;
     max-width: 1300px;
     height: 215px;
     background: #fff;
-    margin: 30px 10px;
+    margin: 30px -70px;
     padding: 100px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
+    font-family: 'KCCChassam';
+    font-size: 2.5rem;
 }
-.container:hover{
+
+.container:hover {
     width: 1500px;
     transition: 1s ease-in-out;
     flex-direction: column;
 }
 
-.container .card:hover{
+.container .card:hover {
     height: 500px;
 }
 
-.container .card .imgbx{
+.container .card .imgbx {
     position: relative;
     width: 300px;
     height: 300px;
     bottom: 50px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.container .card .imgbx img{
+.container .card .imgbx img {
     max-width: 100%;
     border-radius: 4px;
 }
 
-.container .card .content{
+.container .card .content {
     position: relative;
     margin-top: -140px;
     padding: 10px 15px;
@@ -65,10 +94,76 @@ body
     opacity: 0;
     transition: 0.3s ease-in-out;
 }
-.container .card:hover .content{
+
+.container .card:hover .content {
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
 }
 
+
+
+.mbti-font .mbti-mbti {
+    font-family: 'KimjungchulMyungjo-Bold';
+    font-size: 10rem;
+    padding: 5px;
+}
+
+.mbti-font .mbti-infomation {
+    font-family: 'KCCChassam';
+    font-size: 2rem;
+    background-color: rgb(248, 237, 237);
+}
+
+.mbti-font .mbti-name {
+    font-family: 'KCCChassam';
+    font-size: 4rem;
+    animation-name: movingback;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-color: salmon;
+}
+@keyframes moving {
+    from { transform: translate(0,0);}
+    to { transform: translate(50px,0);}
+}
+
+@keyframes movingback {
+    0% { transform: translate(0,0);}
+    50% { transform: translate(100px,0);}
+    100% { transform: translate(0,0);}
+}
+
+.submit-button{
+    font-family: 'KCCChassam';
+    font-size: 1.5rem;
+    border-radius: 3px;
+    width: 100px;
+    height: 55px;
+}
+
+.submit-button:hover{
+    background: yellow;
+}
+
+.submiT{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 1000px;
+    text-align: center;
+}
+.mbti-img{
+    animation-name: movingback;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+.flex-box-height-wrap {
+    display: flex;
+    min-height: 150px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}

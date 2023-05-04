@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulMyungjo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.wead{
+    background-color: rgb(255, 255, 255);
+
+}
+.n1{
+    font-family: 'KCCChassam';
+    padding: 20px;
+    background-color: aliceblue;
+    max-width: 500px;
+    margin-left: 675px;
+}
+
+.n2{
+    font-family: 'GangwonEduPowerExtraBoldA';
+    padding: 10px;
+    text-align: center;
+}

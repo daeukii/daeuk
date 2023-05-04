@@ -1,49 +1,43 @@
 [
     {
-        "weather" : "sunny",
+        "weather" : "맑은날",
         "name" : "메종마르지엘라 레이지 선데이모닝",
         "gender" : "남자"},
         {
-            "weather" : "sunny",
+            "weather" : "맑은날",
             "name" : "바이레도 블랑쉬",
             "gender" : "여자"},
 
-
-
         {
-            "weather" : "cloudy",
+            "weather" : "흐린날",
             "name" : "이솝 휠",
             "gender" : "남자"
         },
         {
-            "weather" : "cloudy",
+            "weather" : "흐린날",
             "name" : "이솝 테싯",
             "gender" : "여자"
         },
 
 
-
-
         {
-            "weather" : "rainy",
+            "weather" : "비오는날",
             "name" : "마크제이콥스 레인",
             "gender" : "남자"
         },
         {
-            "weather" : "rainy",
+            "weather" : "비오는날",
             "name" : "딥디크 롬브로단로",
             "gender" : "여자"
         },
 
-
-
         {
-            "weather" : "snowing",
+            "weather" : "눈오는날",
             "name" : "톰포드 화이트스웨이드",
             "gender" : "남자"
         }, 
         {
-            "weather" : "snowing",
+            "weather" : "눈오는날",
             "name" : "톰포드 솔레이네쥬",
             "gender" : "여자"
         },

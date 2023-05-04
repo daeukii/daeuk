@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faEnvelope as faEnvelope, faSun  } from '@fortawesome/free-solid-svg-icons';
+import './Weatherk.css';
 
 
 
@@ -46,10 +47,12 @@ export default function Weather() {
 
 
   return (
-    <div className='weatherk'>
-      <h3>{weather}, {weatherIcon}</h3>
-      <FontAwesomeIcon icon={faSun} />
-      <h2>헤븐센츠를 방문해주신 고객님. 오늘 날씨에는 "{}"를 추천해드리고 싶어요 </h2>
+    <div className='wead'>
+      <h2 className='n1'>오늘의 날씨 ▶{weather}, {weatherIcon}◀</h2>
+      <h2 className='n2'>센츠헤븐를 방문해주신 모든 고객님. 오늘 날씨에는</h2>
+      <h2 className='n2'>"{}"를 추천해드리고 싶어요</h2>
+      
     </div>
+    
   )
 }

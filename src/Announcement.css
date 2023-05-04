@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.announcement {
+    background: #5072A7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    
+}
+
+.announcement-text{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+
+.text1 span{
+    margin-right: 10rem;
+    font-family: 'KCCChassam';
+}
+
+.text2 span{
+    margin-right: 10rem;
+    font-family: 'KCCChassam';
+}
+
+.text2 span:not(:last-child){
+    margin-right: 2rem;
+}
+
+.text2 span:last-child{
+    margin-right: 2rem;
+}
