@@ -8,12 +8,14 @@ export default function Grooming() {
   const [name, setName] = useState();
   const [price, setPrice] = useState();
   const [img, setImg] = useState();
+  const [txt,setTxt] = useState();
 
 
   useEffect(() => {
     setName(products.name);
     setPrice(products.price);
     setImg(products.img);
+    setTxt(products.txt);
   },[]);
 
   return (
@@ -28,6 +30,7 @@ export default function Grooming() {
           <img src={products[13].img} />
           </div>
           <div className="content">
+          {products[13].txt}
           </div>
         </div>
       </div>  
@@ -40,6 +43,7 @@ export default function Grooming() {
           <img src={products[14].img} />
           </div>
           <div className="content">
+          {products[14].txt}
           </div>
         </div>
       </div>  
@@ -52,6 +56,7 @@ export default function Grooming() {
           <img src={products[15].img} />
           </div>
           <div className="content">
+          {products[15].txt}
           </div>
         </div>
       </div>  
@@ -64,6 +69,7 @@ export default function Grooming() {
           <img src={products[16].img} />
           </div>
           <div className="content">
+          {products[16].txt}
           </div>
         </div>
       </div>  
@@ -76,6 +82,7 @@ export default function Grooming() {
           <img src={products[17].img} />
           </div>
           <div className="content">
+          {products[17].txt}
           </div>
         </div>
       </div>  

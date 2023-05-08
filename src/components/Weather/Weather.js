@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, BrowserRouter, Route, Routes, } from 'react'
 import axios from 'axios'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faEnvelope as faEnvelope, faSun  } from '@fortawesome/free-solid-svg-icons';
 import './Weatherk.css';
-
-
+import Recommend from '../../pages/Recommend/Recommend';
+import { Link } from 'react-router-dom';
 
 
 export default function Weather() {
 
   const [weather, setWeather] = useState("");
   const [weatherIcon, setWeatherIcon] = useState("");
+
 
 
   useEffect(()=>{
@@ -26,32 +25,16 @@ export default function Weather() {
         console.error(error);
       }
     }
-
     getWeather();
-
-    let weatherIcon = {
-      '01' : 'fas fa-sun',
-      '02' : 'fas fa-cloud-sun',
-      '03' : 'fas fa-cloud',
-      '04' : 'fas fa-cloud-meatball',
-      '09' : 'fas fa-cloud-sun-rain',
-      '10' : 'fas fa-cloud-showers-heavy',
-      '11' : 'fas fa-poo-storm',
-      '13' : 'far fa-snowflake',
-      '50' : 'fas fa-smog'
-    };
-
-
   }, []);
 
 
 
   return (
     <div className='wead'>
-      <h2 className='n1'>오늘의 날씨 ▶{weather}, {weatherIcon}◀</h2>
+      <h2 className='n1'>오늘의 날씨 ▶{weather}◀</h2>
       <h2 className='n2'>센츠헤븐를 방문해주신 모든 고객님. 오늘 날씨에는</h2>
-      <h2 className='n2'>"{}"를 추천해드리고 싶어요</h2>
-      
+      <h2 className='n2'>"<Link to='/Recommend' className='n3'>이 향수</Link>"를 추천해드리고 싶어요</h2>
     </div>
     
   )

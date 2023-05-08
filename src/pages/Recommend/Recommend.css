@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'establishRoomNo703OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+.dk1{
+    font-family: 'establishRoomNo703OTF';
+    margin-bottom: 10px;
+    background-color: beige;
+    text-align: center;
+
+}
+.dk2{
+    font-family: 'establishRoomNo703OTF';
+    margin-bottom: 10px;
+    background-color:rgb(221, 116, 116);
+    text-align: center;
+}
+.dk3{
+    font-family: 'establishRoomNo703OTF';
+    margin-bottom: 10px;
+    background-color: rgba(177, 78, 78, 0.541);
+    text-align: center;
+}
+.dk4{
+    font-family: 'establishRoomNo703OTF';
+    margin-bottom: 10px;
+    background-color: rgb(153, 153, 233);
+    text-align: center;
+}

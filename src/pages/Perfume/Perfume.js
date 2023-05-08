@@ -7,11 +7,19 @@ export default function Perfume() {
   const [name, setName] = useState();
   const [price, setPrice] = useState();
   const [img, setImg] = useState();
+  const [txt,setTxt] = useState();
+  const [topnote, setTopnote] = useState();
+  const [middlenote, setMiddlenote] =useState();
+  const [basenote, setBasenote] = useState();
 
   useEffect(() => {
     setName(products.name);
     setPrice(products.price);
     setImg(products.img);
+    setTxt(products.txt);
+    setTopnote(products.topnote);
+    setMiddlenote(products.middlenote);
+    setBasenote(products.basenote);
   },[]);
 
   return (
@@ -26,6 +34,14 @@ export default function Perfume() {
           <img src={products[0].img} />
           </div>
           <div className="content">
+          {products[0].txt}
+          <br/>
+          <br/>
+          {products[0].topnote}
+          <br/>
+          {products[0].middlenote}
+          <br/>
+          {products[0].basenote}
           </div>
         </div>
       </div>
@@ -38,6 +54,14 @@ export default function Perfume() {
           <img src={products[1].img} />
           </div>
           <div className="content">
+          {products[1].txt}
+          <br/>
+          <br/>
+          {products[1].topnote}
+          <br/>
+          {products[1].middlenote}
+          <br/>
+          {products[1].basenote}
           </div>
         </div>
       </div>
@@ -50,6 +74,14 @@ export default function Perfume() {
           <img src={products[2].img} />
           </div>
           <div className="content">
+          {products[2].txt}
+          <br/>
+          <br/>
+          {products[2].topnote}
+          <br/>
+          {products[2].middlenote}
+          <br/>
+          {products[2].basenote}
           </div>
         </div>
       </div>
@@ -62,6 +94,14 @@ export default function Perfume() {
           <img src={products[3].img} />
           </div>
           <div className="content">
+          {products[3].txt}
+          <br/>
+          <br/>
+          {products[3].topnote}
+          <br/>
+          {products[3].middlenote}
+          <br/>
+          {products[3].basenote}
           </div>
         </div>
       </div>
@@ -74,6 +114,14 @@ export default function Perfume() {
           <img src={products[4].img} />
           </div>
           <div className="content">
+          {products[4].txt}
+          <br/>
+          <br/>
+          {products[4].topnote}
+          <br/>
+          {products[4].middlenote}
+          <br/>
+          {products[4].basenote}
           </div>
         </div>
       </div>
@@ -86,11 +134,17 @@ export default function Perfume() {
           <img src={products[5].img} />
           </div>
           <div className="content">
-
+          {products[5].txt}
+          <br/>
+          <br/>
+          {products[5].topnote}
+          <br/>
+          {products[5].middlenote}
+          <br/>
+          {products[5].basenote}
           </div>
         </div>
       </div>
     </div>
   )
 }
-

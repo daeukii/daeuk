@@ -6,12 +6,14 @@ export default function Body() {
   const [name, setName] = useState();
   const [price, setPrice] = useState();
   const [img, setImg] = useState();
+  const [txt,setTxt] = useState();
 
 
   useEffect(() => {
     setName(products.name);
     setPrice(products.price);
     setImg(products.img);
+    setTxt(products.txt);
   },[]);
 
   return (
@@ -26,6 +28,7 @@ export default function Body() {
           <img src={products[6].img} />
           </div>
           <div className="content">
+          {products[6].txt}
           </div>
         </div>
       </div>
@@ -38,6 +41,7 @@ export default function Body() {
           <img src={products[7].img} />
           </div>
           <div className="content">
+          {products[7].txt}
           </div>
         </div>
       </div>
@@ -50,6 +54,7 @@ export default function Body() {
           <img src={products[8].img} />
           </div>
           <div className="content">
+          {products[8].txt}
           </div>
         </div>
       </div>

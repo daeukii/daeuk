@@ -10,7 +10,9 @@ import Grooming from './pages/Grooming/Grooming';
 import Mbti from './pages/MBTI/Mbti';
 import BackToTopText from './components/ScrollButton/BackToTopText';
 import Announcement from './Announcement';
-
+import Login from './pages/Login/Login';
+import Recommend from './pages/Recommend/Recommend';
+import Register from './pages/Register/Register';
 
 function App() {
 
@@ -27,6 +29,9 @@ function App() {
           <Route path="/candle" element={<Candle />} />
           <Route path="/grooming" element={<Grooming />} />
           <Route path="/Mbti" element={<Mbti />} />
+          <Route path="/Login" element={<Login/>}/>
+          <Route path="/Register" element={<Register/>}/>
+          <Route path="/Recommend" element={<Recommend/>}/>
         </Routes>
         <Footer/>
       </div>

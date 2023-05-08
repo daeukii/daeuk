@@ -6,12 +6,14 @@ export default function Candle() {
   const [name, setName] = useState();
   const [price, setPrice] = useState();
   const [img, setImg] = useState();
+  const [txt,setTxt] = useState();
 
 
   useEffect(() => {
     setName(products.name);
     setPrice(products.price);
     setImg(products.img);
+    setTxt(products.txt);
   },[]);
 
   return (
@@ -26,6 +28,7 @@ export default function Candle() {
           <img src={products[9].img} />
           </div>
           <div className="content">
+          {products[9].txt}
           </div>
         </div>
       </div><div className="container">
@@ -37,6 +40,7 @@ export default function Candle() {
           <img src={products[10].img} />
           </div>
           <div className="content">
+          {products[10].txt}
           </div>
         </div>
       </div><div className="container">
@@ -48,6 +52,7 @@ export default function Candle() {
           <img src={products[11].img} />
           </div>
           <div className="content">
+          {products[11].txt}
           </div>
         </div>
       </div><div className="container">
@@ -59,6 +64,7 @@ export default function Candle() {
           <img src={products[12].img} />
           </div>
           <div className="content">
+          {products[12].txt}
           </div>
         </div>
       </div>
