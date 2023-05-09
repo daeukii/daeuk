@@ -13,6 +13,8 @@ import Announcement from './Announcement';
 import Login from './pages/Login/Login';
 import Recommend from './pages/Recommend/Recommend';
 import Register from './pages/Register/Register';
+import PostMain from './pages/Ddd/PostMain';
+import PostView from './pages/Ddd/PostView';
 
 function App() {
 
@@ -31,7 +33,10 @@ function App() {
           <Route path="/Mbti" element={<Mbti />} />
           <Route path="/Login" element={<Login/>}/>
           <Route path="/Register" element={<Register/>}/>
+          <Route path="/PostMain" element={<PostMain/>}/>
           <Route path="/Recommend" element={<Recommend/>}/>
+          <Route exact path='/postView/:no' component={PostView} />
+        <Route exact path='/' component={PostMain} />
         </Routes>
         <Footer/>
       </div>

@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
+    background-image:url(../../../public/img/beach.jpg) ;
 }
 .loginregister__input {
     width: 300px;
@@ -19,3 +20,4 @@
     height: 48px;
     margin-top: 10px;
 }
+

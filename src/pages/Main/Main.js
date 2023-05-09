@@ -3,7 +3,8 @@ import ReactPlayer from 'react-player';
 import Weather from '../../components/Weather/Weather';
 import products from '../../../src/api/products.json';
 import { useState, useEffect } from 'react';
-import Marquee from 'react-fast-marquee'
+import Marquee from 'react-fast-marquee';
+
 
 export default function Main() {
     const [name, setName] = useState();
@@ -32,7 +33,6 @@ export default function Main() {
                     controls={false}
                 />
             </div>
-
             <Marquee speed={30} gradient={false}>
                 <div class="flex-box-height-wrap">
                     <img src={products[0].img} />

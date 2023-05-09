@@ -48,7 +48,7 @@ body {
 .container .card {
     position: relative;
     height: 300px;
-    background: #a4e7e83b;
+    background: #d8f1f13b;
     margin: 30px -70px;
     padding: 100px;
     display: flex;
@@ -90,6 +90,8 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
+    font-family: 'KCCChassam';
+    background-color:rgba(49, 0, 95, 0.048)
 }
 
 .container .card:hover .content {
@@ -97,6 +99,8 @@ body {
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
+    font-family: 'KCCChassam';
+    background-color:rgba(128, 167, 65, 0.048)
 }
 
 
